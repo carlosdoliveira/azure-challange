@@ -4,27 +4,27 @@ Esta lista de to-dos foi criada para organizar e orquestrar as atividades que se
 
 # Visão Geral
 Esta é a lista de componentes que serão usados neste cenário:
- - [ ] Resource Group
- - [ ] Virtual Network
- - [ ] Subnet
- - [ ] Tag
+ - [x] Resource Group
+ - [x] Virtual Network
+ - [x] Subnet
+ - [x] Tag
  - [ ] Azure Container Registry
  - [ ] Azure Container Instance
- - [ ] Virtual Network Peering
+ - [x] Virtual Network Peering
  - [ ] Azure Virtual Machine + Disks
  - [ ] Azure Load Balancer
  - [ ] Azure Application Gateway
  - [ ] Azure Front Door
  - [ ] Azure Monitor
  - [ ] Azure Kubernetes Service
- - [ ] Network Security Group
+ - [x] Network Security Group
  - [ ] Route Table
  - [ ] Storage Account
  - [ ] Azure Firewall
 
 # Azure Cloud
 - Requisitos gerais
-    - [ ] Preparar Azurerm provider
+    - [x] Preparar Azurerm provider
     - [ ] Criar nas regiões East US e West US
 - Redes 
     - Balanceadores de Carga: 
@@ -37,22 +37,22 @@ Esta é a lista de componentes que serão usados neste cenário:
             - [ ] Criar Health Probe para kafka
             - [ ] Cirar LB Rule para o kafka
     - NSGs:
-        - [ ] Criar NSG da Subnet Public
+        - [x] Criar NSG da Subnet Public
             - Regras: 
-                - [ ] Allow Porta 80, 443 a partir da internet
-        - [ ] Criar NSG da Subnet Private
+                - [x] Allow Porta 80, 443 a partir da internet
+        - [x] Criar NSG da Subnet Private
             - Regras: 
                 - [ ] Permitir 2181 a partir da Subnet Public
-        - [ ] Criar NSG da Subnet Database
+        - [x] Criar NSG da Subnet Database
             - Regras: 
                 - [ ] Permitir 3306 a partir da Subnet Private
-        - [ ] Criar NSG da subnet Streaming / MSG
+        - [x] Criar NSG da subnet Streaming / MSG
             - Regras: 
                 - [ ] Permitir 2181 a partir da Subnet Private
-        - [ ] Criar NSG da Subnet Shared
+        - [x] Criar NSG da Subnet Shared
             - Regras:
                 - [ ] Permitir Conectividade com todas as subnets nos protocolos usados pelo Jenkins e recursos PaaS.
-        - [ ] Criar NSG da Subnet MGMT
+        - [x] Criar NSG da Subnet MGMT
             - Regras: 
                 - [ ] Permitir conexão na porta 22 apenas no IP público do criado
     - UDRs:
