@@ -8,10 +8,10 @@ Requisitos :
 
 
 
-- [] Toda a infra deve ser provisionada a partir de um script chamado run.sh
-- [] A infra deve ser provisionada via terraform (iuniciado pelo run.sh)
-- [] Os itens de Iaas devem ser configurados via Ansible e integrados com o terraform dentro do modulo e não no default (main.tf raiz).
-- [] As Imagens de vm devem ser criadas via Packer e ter um ciclo de destruição das mesmas.
+- [ ] Toda a infra deve ser provisionada a partir de um script chamado run.sh
+- [ ] A infra deve ser provisionada via terraform (iuniciado pelo run.sh)
+- [ ] Os itens de Iaas devem ser configurados via Ansible e integrados com o terraform dentro do modulo e não no default (main.tf raiz).
+- [ ] As Imagens de vm devem ser criadas via Packer e ter um ciclo de destruição das mesmas.
 
 
 Infraestrutura: 
@@ -30,6 +30,11 @@ DR e Monitoramento:
 - O Monitoramento deve informar quantas máquinas do cluster kafka estão em uso e conseguir utiliza-lo como metrica para provisionamento de novas máquinas dentro de sua propria zona
  ( metrica em linguagem neutra:
  if kafka cluster_cpu and ram use > 80% then provision +1 node wile use > 80% )
+
+
+# Por onde vou começar
+![Primeira etapa](https://firebasestorage.googleapis.com/v0/b/second-petal-295822.appspot.com/o/images%2Fworkspaces%2F6Dmm3kkdMBwMDu63GKNU%2FWLh67fG1zpNvMXmnZ0fSuun7HO22%2F---figure---AO_tY-dx5vhYsSlGDiue----figure---WLgDYB2drEtcaCFqnUIuug.svg?alt=media&token=15be94af-0d6f-41c5-8b41-c8aa61daa99a "Primeira etapa")
+
 
 
 
